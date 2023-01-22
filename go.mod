@@ -7,7 +7,7 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/go-cmp v0.5.9
-	github.com/mssvpn/websocket v1.4.4
+	github.com/mssvpn/websocket v1.4.5
 	github.com/lucas-clemente/quic-go v0.31.1
 	github.com/marten-seemann/qtls-go1-18 v0.1.4
 	github.com/miekg/dns v1.1.50

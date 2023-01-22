@@ -18,8 +18,8 @@ import (
 )
 
 var (
-	version  = "1.7.2"
-	build    = "Custom"
+	version  = "1.7.2-1"
+	build    = "Custom Multiple Path"
 	codename = "Xray, Penetrates Everything."
 	intro    = "A unified platform for anti-censorship."
 )

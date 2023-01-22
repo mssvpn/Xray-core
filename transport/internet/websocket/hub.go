@@ -37,11 +37,6 @@ var upgrader = &websocket.Upgrader{
 }
 
 func (h *requestHandler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
-	if request.URL.Path != h.path {
-		writer.WriteHeader(http.StatusNotFound)
-		return
-	}
-
 	var extraReader io.Reader
 	responseHeader := http.Header{}
 	if str := request.Header.Get("Sec-WebSocket-Protocol"); str != "" {

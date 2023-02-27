@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gorilla/websocket"
+	"github.com/mssvpn/websocket"
 	"github.com/xtls/xray-core/common"
 	"github.com/xtls/xray-core/common/net"
 	http_proto "github.com/xtls/xray-core/common/protocol/http"
@@ -37,11 +37,6 @@ var upgrader = &websocket.Upgrader{
 }
 
 func (h *requestHandler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
-	if request.URL.Path != h.path {
-		writer.WriteHeader(http.StatusNotFound)
-		return
-	}
-
 	var extraReader io.Reader
 	responseHeader := http.Header{}
 	if str := request.Header.Get("Sec-WebSocket-Protocol"); str != "" {

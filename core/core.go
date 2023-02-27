@@ -25,7 +25,7 @@ var (
 )
 
 var (
-	build    = "Custom"
+	build    = "Custom MSSVPN"
 	codename = "Xray, Penetrates Everything."
 	intro    = "A unified platform for anti-censorship."
 )

@@ -22,7 +22,7 @@ var (
 	Version_w byte = 1
 	Version_x byte = 7
 	Version_y byte = 5
-	Version_z byte = -1
+	Version_z byte = 1
 )
 
 var (
